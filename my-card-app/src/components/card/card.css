@@ -1,0 +1,64 @@
+
+
+.card{
+    color: white;
+    width: 447px;
+    margin: auto;
+    padding: 10vh;
+    left: 19vh;
+}
+
+.card--front {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(171,1,255,1) 44%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    top: 15vh;
+}
+
+.card__owner {
+    position: absolute;
+    bottom: 15px;
+    left: 26px;
+}
+
+.card__number {
+    letter-spacing: 7px;
+}
+
+.card__expiry-date {
+    position: absolute;
+    bottom: 15px;
+    right: 26px;
+}
+
+.card__ccv {
+    background-color: whitesmoke;
+    width: 45vh;
+    height: 5vh;
+    position: absolute;
+    top: 74px;
+    left: 54px;
+}
+
+.card--back {
+    color: black;
+    padding: 100px;
+    bottom: -25vh;
+    left: 34vh;;
+}
+
+.card__strip {
+    background-color: black;
+    width: 62vh;
+    height: 5vh;
+    position: absolute;
+    top: 21px;
+    left: 0px;
+}
+
+.cvv-digit {
+    background-color: white;
+    position: absolute;
+    right: 25px;
+    top: 6px;
+}
