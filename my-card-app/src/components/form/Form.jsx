@@ -2,7 +2,7 @@ import React from 'react'
 import "./form.css"
 import { useState } from 'react';
 
-function Form() {
+function Form(props) {
 
     const[cardHolderName, setCardHolderName] = useState("")
     const[cardNumber, setCardNumber] = useState("")
@@ -17,8 +17,16 @@ function Form() {
         if(cardHolderName.length === 0 || cardNumber === 0 || cardMonth === 0 || cardYear === 0 || cardCvv === 0) {
             setError(true)
         }
-        console.log("click-click");
         console.log(cardHolderName, cardNumber, cardMonth, cardYear, cardCvv);
+        
+        props.setCardDetails({
+            cardName: cardHolderName,
+            cardNum: cardNumber,
+            cardMm: cardMonth,
+            cardYy: cardYear,
+            cardCvv: cardCvv
+        })
+    
     }
 
     return (
